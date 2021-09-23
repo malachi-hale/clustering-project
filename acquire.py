@@ -68,10 +68,17 @@ def only_single_unit(df):
     or single-family homes.
     '''
     df = df[df.propertylandusetypeid.isin([261.0, 266.0, 263.0, 269.0, 275.0, 264.0])]
+    
+    ## We will reset the index, since we have just elimated some rows. 
+    df = df.reset_index()
+    
+    ## Drop any columns which were left completely null as a result 
+    df.dropna(how='all', axis=1, inplace=True)
+
     return df
 
 
-def zillow_data()"
+def zillow_data():
     df = get_zillow_data()
 
     df = only_single_unit(df)
