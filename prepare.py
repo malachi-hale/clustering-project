@@ -49,15 +49,10 @@ def remove_outliers(df, k, col_list):
         
     return df
 
-continuous = ['bathroomcnt',
- 'bedroomcnt',
- 'calculatedbathnbr',
+continuous = [
  'calculatedfinishedsquarefeet',
  'finishedsquarefeet12',
- 'fullbathcnt',
  'lotsizesquarefeet',
- 'roomcnt',
- 'yearbuilt',
  'structuretaxvaluedollarcnt',
  'taxvaluedollarcnt',
  'landtaxvaluedollarcnt',
