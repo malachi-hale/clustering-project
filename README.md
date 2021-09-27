@@ -52,13 +52,6 @@
      - Compare the models' performance. Compare Validate and Train RMSE. 
  - Select the best performing model and run that model on the test dataset. 
      - Evaluate results of the model on the test DataSet. 
-     
-## Reproduce my project
-To reproduce my project, you will need to obtain your own `env.py` file with database credentials, in addition to the actions listed below:
- - Read this `READ.md` file. 
- - Download the `acquire.py`, `prepare.py`, and `Final_Project.ipynb` files. 
- - Add your own `env.py` file to your directory. You will need to access the SQL database to obtain the Zillow data. 
- - Run the `Final_Project.ipynb` notebook. 
  
  ## Data Dictionary 
  
@@ -135,3 +128,52 @@ Below is a data dictionary of the features that we will use in this project.
 | 67 | typeconstructiondesc         | object     |
 | 68 | bathroomcnt_scaled           | float64    |
 | 69 | bedroomcnt_scaled            | float64    |
+
+## Initial Hypothesis Testing 
+
+In our explore phase, we run the following hypothesis tests to explore possible drivers of logerror.
+
+### Hypothesis Comparing Bathroom Count and Log Error
+
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no difference in log error between properties with less than 3.5 bathrooms and properties with 3.5 bathrooms or more.
+
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_1): There is a difference in log error between properties with less than 3.5 bathrooms and properties with 3.5 bathrooms or more.
+
+We concluded that there is a difference in mean logerror between properties with less than 3.5 bathrooms and properties with 3.5 bathrooms or more. 
+
+### Hypotheses Comparing FIPS code and Log Error
+
+#### Los Angeles v. Orange County
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no difference in log error between Los Angeles and Orange County. 
+
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_1): There is a significant difference in log error between Los Angeles and Orange County.
+ 
+We conclude that there is no significant difference in mean logerror between Los Angeles and Orange County. 
+
+#### Orange County v. Ventura
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no difference in log error between Orange County and Ventura. 
+
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_1): There is a significant difference in log error between Orange County and Ventura.
+ 
+We conclude that there is a difference in mean logerror between Orange County and Ventura. 
+
+#### Los Angeles v. Ventura
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0): There is no difference in log error between Los Angeles and Ventura. 
+
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_1): There is a significant difference in log error between Los Angeles and Ventura.
+ 
+We conclude there is a difference in mean log error between Los Angeles and Ventura.
+
+### Hypothesis Comparing Bedroom Count and Log Error
+- ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_0):There is no difference in log error between properties with less than 4 bedrooms and properties with 4 bedrooms or more.
+
+ - ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20H_1): There is a difference in log error between properties with less than 4 bedrooms and properties with 4 bedrooms or more.
+ 
+We conclude there is no difference in mean logerror between properties with less than four bedrooms and properties with four bedrooms or more.
+
+## Reproduce my project
+To reproduce my project, you will need to obtain your own `env.py` file with database credentials, in addition to the actions listed below:
+ - Read this `READ.md` file. 
+ - Download the `acquire.py`, `prepare.py`, and `Final_Project.ipynb` files. 
+ - Add your own `env.py` file to your directory. You will need to access the SQL database to obtain the Zillow data. 
+ - Run the `Final_Project.ipynb` notebook. 
