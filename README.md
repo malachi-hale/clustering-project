@@ -59,3 +59,79 @@ To reproduce my project, you will need to obtain your own `env.py` file with dat
  - Download the `acquire.py`, `prepare.py`, and `Final_Project.ipynb` files. 
  - Add your own `env.py` file to your directory. You will need to access the SQL database to obtain the Zillow data. 
  - Run the `Final_Project.ipynb` notebook. 
+ 
+ ## Data Dictionary 
+ 
+Below is a data dictionary of the features that we will use in this project. 
+ 
+|    | Feature                      | Datatype   |
+|---:|:-----------------------------|:-----------|
+|  1 | typeconstructiontypeid       | float64    |
+|  2 | storytypeid                  | float64    |
+|  3 | propertylandusetypeid        | float64    |
+|  4 | id                           | int64      |
+|  5 | heatingorsystemtypeid        | float64    |
+|  6 | architecturalstyletypeid     | float64    |
+|  7 | airconditioningtypeid        | float64    |
+|  8 | parcelid                     | int64      |
+|  9 | basementsqft                 | float64    |
+| 10 | bathroomcnt                  | float64    |
+| 11 | bedroomcnt                   | float64    |
+| 12 | buildingqualitytypeid        | float64    |
+| 13 | calculatedbathnbr            | float64    |
+| 14 | decktypeid                   | float64    |
+| 15 | finishedfloor1squarefeet     | float64    |
+| 16 | calculatedfinishedsquarefeet | float64    |
+| 17 | finishedsquarefeet12         | float64    |
+| 18 | finishedsquarefeet13         | float64    |
+| 19 | finishedsquarefeet15         | float64    |
+| 20 | finishedsquarefeet50         | float64    |
+| 21 | finishedsquarefeet6          | float64    |
+| 22 | fips                         | float64    |
+| 23 | fireplacecnt                 | float64    |
+| 24 | fullbathcnt                  | float64    |
+| 25 | garagecarcnt                 | float64    |
+| 26 | garagetotalsqft              | float64    |
+| 27 | hashottuborspa               | float64    |
+| 28 | latitude                     | float64    |
+| 29 | longitude                    | float64    |
+| 30 | lotsizesquarefeet            | float64    |
+| 31 | poolcnt                      | float64    |
+| 32 | poolsizesum                  | float64    |
+| 33 | pooltypeid10                 | float64    |
+| 34 | pooltypeid2                  | float64    |
+| 35 | pooltypeid7                  | float64    |
+| 36 | propertycountylandusecode    | object     |
+| 37 | propertyzoningdesc           | object     |
+| 38 | rawcensustractandblock       | float64    |
+| 39 | regionidcity                 | float64    |
+| 40 | regionidcounty               | float64    |
+| 41 | regionidneighborhood         | float64    |
+| 42 | regionidzip                  | float64    |
+| 43 | roomcnt                      | float64    |
+| 44 | threequarterbathnbr          | float64    |
+| 45 | unitcnt                      | float64    |
+| 46 | yardbuildingsqft17           | float64    |
+| 47 | yardbuildingsqft26           | float64    |
+| 48 | yearbuilt                    | float64    |
+| 49 | numberofstories              | float64    |
+| 50 | fireplaceflag                | float64    |
+| 51 | structuretaxvaluedollarcnt   | float64    |
+| 52 | taxvaluedollarcnt            | float64    |
+| 53 | assessmentyear               | float64    |
+| 54 | landtaxvaluedollarcnt        | float64    |
+| 55 | taxamount                    | float64    |
+| 56 | taxdelinquencyflag           | object     |
+| 57 | taxdelinquencyyear           | float64    |
+| 58 | censustractandblock          | float64    |
+| 59 | airconditioningdesc          | object     |
+| 60 | architecturalstyledesc       | object     |
+| 61 | heatingorsystemdesc          | object     |
+| 62 | logerror                     | float64    |
+| 63 | transactiondate              | object     |
+| 64 | last_trans_date              | object     |
+| 65 | propertylandusedesc          | object     |
+| 66 | storydesc                    | object     |
+| 67 | typeconstructiondesc         | object     |
+| 68 | bathroomcnt_scaled           | float64    |
+| 69 | bedroomcnt_scaled            | float64    |
