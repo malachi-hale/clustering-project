@@ -30,7 +30,7 @@ def impute_null_values(df):
 
 #This function removes extreme outliers from our DataFrame
 def remove_outliers(df, k, col_list):
-    ''' remove outliers from a list of columns in a dataframe 
+    ''' remove the outliers from a list of columns in a dataframe 
         and return that dataframe
     '''
     

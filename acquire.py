@@ -19,7 +19,7 @@ def get_connection(db, user=env.user, host=env.host, password=env.password):
 #Now we will make our DataFrame with the relevant Zillow data
 def get_zillow_data():
     '''
-    We will run a SQL query that uses joins to obtain all information for properties with a 
+    We first will run a SQL query that uses joins to obtain all information for properties with a 
     transaction date in 2017 in Los Angles, Orange, and Ventura County. 
     '''
     filename = "zillow.csv"

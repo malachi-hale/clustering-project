@@ -23,7 +23,7 @@ from scipy import stats
 from math import sqrt
 
 def plot_residuals(y, yhat):
-    
+    ##We will plot the residual values using scatterplot
     residual = yhat - y
     
     plt.scatter(y, residual)
